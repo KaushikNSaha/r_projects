@@ -130,7 +130,7 @@ cert %>%
 honors <- tribble(
   ~accomplishment, ~year, ~where, ~detail,
   "The GOLD STANDARD of The DUKE of EDINBURG’S INTERNATIONAL AWARD", "2015",
-  "The Duke of EDINBURG Foundation", "Awarded due to voluntary work performed on severeal sectors"
+  "The Duke of EDINBURG Foundation", "Awarded due to voluntary work performed on several sectors"
 )
 
 honors %>% 
