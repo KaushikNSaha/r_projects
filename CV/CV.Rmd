@@ -1,0 +1,145 @@
+---
+name: Kaushik Nandan
+surname: Saha 
+address: "Shrish Das Lane, Banglabazar, Dhaka"
+phone: +880 1917658860
+email: "kaushiknandansaha@gmail.com"
+github: KaushikNSaha
+linkedin: knsaha
+date: "`r format(Sys.time(), '%B %Y')`"
+headcolor: 990000
+aboutme: "I have been doing Data Analysis work on various dataset during this year. I have a deep driven passion for Data Analysis, Visualization, and data science. I aspire to help the company I work for, make Data Driven Decision"
+docname: Résumé
+output: vitae::awesomecv
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      warning = FALSE,
+                      message = FALSE)
+require(xfun)
+
+packages <- c('vitae'     # The CV's LaTeX Template
+             ,'tibble'    # Data structure for tribbles
+             ,'magrittr'  # The Pipe %>%
+             ,'here'      # Relative File Paths
+             ,'readr'     # Data Loading
+             ,'glue'      # String Manipulation
+            )
+xfun::pkg_attach2(packages, message = FALSE)
+
+```
+
+# Education
+
+```{r education}
+edu <- tribble(
+  ~degree, ~startYear, ~endYear, ~uni, ~detail,
+  "Master of Science, Renewable Energy Technology", "Oct, 2015", "Mar, 2018", "Institute of Energy, University of Dhaka", 
+  "CGPA: 3.55 out of 4.00",
+  "Bachelor of Science, Electrical & Electronic Engineering", "2011", "2015", "American International University Bangladesh", 
+  "CGPA: 2.78 out of 4.00"
+)
+
+edu %>% 
+  detailed_entries(
+    with = degree,
+    what = uni,
+    why = detail,
+    when = glue::glue("{startYear} --> {endYear}",.na = ""),
+    )
+```
+# Skills
+```{r skills}
+skills <- tribble(
+  ~area, ~skills, ~detail,
+  "Microsoft Office", "Excel, PowerBI, PowerPoint, Word" , "Data Cleaning, Analysis, Pivot Table, Dashboard",
+  "Programming Language", "R", "Data Exploration, Analysis, Visualization using Packages: Tidyverse, DataExplorer, Plotly, Lubridate",
+  "", "SQL","Database Query, Exploration, Cleaning using- Joins, CTE, TempTable, Stored Procedures, Window Functions, Views",
+  "", "Python", "Data Analysis and Machine learning tasks using Packages: Pandas, NumPy, Matplotlib, scikit learn",
+  "Data Visualization", "Tableau", "Creating Dashboard and Data Story with Key Insights",
+  "Markup Language", "RMarkdown, Juypter Notebook", "Documentation and Create Detailed Reports",
+  
+)
+
+skills %>%
+  detailed_entries(
+    with = area,
+    what = skills,
+    why = detail
+  )
+```
+
+# Recent Projects
+```{r projects}
+projects <- tribble(
+  ~area, ~dataset, ~detail,
+  "Business Case Study", "Fictional Bike Share Company Data, Health and wellness Company Dataset", "Performed Data preparation, processing, visualization and found out real business solution",
+  "Environmental Data Case Study", "Renewable energy Dataset, Forest Area Dataset", "Performed Exploratory data analysis and found out various relation and future prospect of Renewable Energy"
+
+)
+
+projects %>%
+  detailed_entries(
+    with = area,
+    what = dataset,
+    why = detail
+  )
+```
+
+# Employment
+```{r employment}
+work <- tribble(
+  ~title, ~startYear, ~endYear, ~where, ~detail,
+  "Freelance Virtual Assisant", "Feb, 2021", "Present", "baeldung.com", "Performing various Administrative work via online using Google Spreadsheet and Project Management Platform- Jira"
+)
+
+work %>% 
+  detailed_entries(
+    with = title,
+    when = glue::glue("{startYear} --> {endYear}",.na = ""),
+    where = where,
+    why = detail
+  )
+```
+
+\pagebreak
+
+# Certifications
+```{r certifications}
+cert <- tribble(
+  ~name, ~year, ~where, ~detail,
+  "Google Data Analytics Professional Certificate", "August, 2021", "Google - provided via Coursera", "Learned key Data Analytics skills like collection, transformation, and organization of data in order to draw conclusions, make predictions, and drive informed decision making.",
+  "SQL for Data Science", "May, 2021", "UC Davis - provide via Coursera", "Learned basics of SQL, basics of database and Analysis with SQL Queries"
+
+)
+
+cert %>%
+  detailed_entries(
+    with = name,
+    when = year,
+    where = where,
+    why = detail
+  )
+```
+
+
+# Honors
+
+```{r}
+honors <- tribble(
+  ~accomplishment, ~year, ~where, ~detail,
+  "The GOLD STANDARD of The DUKE of EDINBURG’S INTERNATIONAL AWARD", "2015",
+  "The Duke of EDINBURG Foundation", "Awarded due to voluntary work performed on severeal sectors"
+)
+
+honors %>% 
+  detailed_entries(
+    with = accomplishment,
+    when = year,
+    why = detail,
+    where = where
+  )
+```
+
+
