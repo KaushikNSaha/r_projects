@@ -1,0 +1,153 @@
+---
+name: Md. Galib
+surname: Reza
+position: "Senior System Engineer"
+address: "House: 11, Road: 06, Dhanmondi, Dhaka - 1205"
+profilepic: "galib.jpg" 
+phone: +880 1912003184
+email: "galib2277@gmail.com"
+linkedin: galib-reza-041a19110
+date: "`r format(Sys.time(), '%B %Y')`"
+headcolor: 007599
+aboutme: "I have been working in the Network server and System Engineering sector for more than 5 years. I have maintained and managed team to complete the work according to the client satisfiction. My Network System knowledge along with my Business Management Skills will become a valuable asset to the company I work for."
+docname: Résumé
+output: vitae::awesomecv
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      warning = FALSE,
+                      message = FALSE)
+require(xfun)
+
+packages <- c('vitae'     # The CV's LaTeX Template
+             ,'tibble'    # Data structure for tribbles
+             ,'magrittr'  # The Pipe %>%
+             ,'here'      # Relative File Paths
+             ,'readr'     # Data Loading
+             ,'glue'      # String Manipulation
+            )
+xfun::pkg_attach2(packages, message = FALSE)
+
+```
+# Employment
+```{r employment}
+work <- tribble(
+  ~title, ~startYear, ~endYear, ~where, ~detail,
+  "Senior System Engineer", "July, 2019", "Present", "Summit Communications Ltd.",
+  "Implemented quality services of IT data base and network server for companies like Grameen Phone, Banglalink, HSBC, Access Telecom, Agni System Ltd, One Sky Communication, Amra Network Ltd etc. Successfully handle the server maintenance of Dhaka region",
+  "Senior System Engineer", "July, 2019", "Present", "Summit Communications Ltd.", "Handle various projects to implement new connectivity and server/network support to Telco companies, ISP, IIG, Government office, and TV satellite.",
+  "Senior System Engineer", "July, 2019", "Present", "Summit Communications Ltd.",
+  "Monitor the maintenance work of Dhaka regional areas including Lalbagh, Kamrangirchar, Dhanmondi, Azimpur, Jigatoa, Hajaribagh, Mohammadpur, Adabor, Lalmatia, Keraniganj, Nawabganj and Dohar.",
+  "Senior System Engineer", "July, 2019", "Present", "Summit Communications Ltd.",
+  "Collaborated closely with operations, business development and integrated service team within Summit group to provide logistical and technical support.",
+  "Senior System Engineer", "July, 2019", "Present", "Summit Communications Ltd.",
+  "Conducted onsite inspections and assessed project conditions, provided technical supports to technicians and clients.",
+  "Senior System Engineer", "July, 2019", "Present", "Summit Communications Ltd.",
+  "Maintain a database of employee’s attendance and overtime sheet.",
+  "System Engineer", "Feb, 2016", "June, 2019", "Summint Communications Ltd.",
+  "Controlled software and equipment to perform quality task in data base and network serving",
+  "System Engineer", "Feb, 2016", "June, 2019", "Summint Communications Ltd.",
+  "Examined installations and observe operations to ensure performance of the equipment, and provide technical assistance to field personnel.",
+  "System Engineer", "Feb, 2016", "June, 2019", "Summint Communications Ltd.",
+  "Maintained & monitored the Telco, ISP, IIG Clients of Dhaka region"
+  
+)
+
+work %>% 
+  detailed_entries(
+    with = title,
+    when = glue::glue("{startYear} --> {endYear}",.na = ""),
+    where = where,
+    why = detail
+  )
+```
+
+# Skills
+```{r skills}
+skills <- tribble(
+  ~area, ~skills, 
+  "Network Devices", "Juniper, Huawei, Tejas, Mikrotik, Cisco & Juniper Technology",
+  "Management Skills", "Project assessment, scheduling, Quality control, Staff training improvement, Inventory management",
+  "Computer Skills", "Word, Excel, PowerPoint, Microsoft Visual Studio, Microsoft Visio",
+  "Client Server and System Analysis", "ArcGIS, Oracle System Analysis and Design, SecureCRT, Putty, Google Earth",
+  "Programming and Simulations", "Linux (RHCSA), C/C++, Multisim, Server/Network Configuration"
+)
+
+skills %>%
+  detailed_entries(
+    with = area,
+    what = skills,
+  )
+```
+
+# Education
+
+```{r education}
+edu <- tribble(
+  ~degree, ~endYear, ~uni, ~detail,
+  "Master of Business Administration (MBA), Management Information Systems", "2020", "University of Dhaka", "CGPA: 3.55 out of 4.00",
+  "Bachelor of Science, Electrical & Electronic Engineering", "2015", "American International University Bangladesh (AIUB)", 
+  "CGPA: 3.34 out of 4.00"
+)
+
+edu %>% 
+  detailed_entries(
+    with = degree,
+    what = uni,
+    why = detail,
+    when = endYear
+    )
+```
+\pagebreak
+# Certifications
+```{r certifications}
+cert <- tribble(
+  ~name, ~year,
+  "MikroTik Certified Network Associate (MTCNA)", "June,2021",
+  "Huawei Certified ICT Professional, HCIP (Routing & Switching)", "August, 2020",
+  "Cisco Certified Network Associates, CCNA (200-301)", "July, 2020",
+  "Juniper Network Certified Associates, Junos (JNCIA-Junos)", "May, 2019",
+)
+
+cert %>%
+  detailed_entries(
+    with = name,
+    when = year,
+  )
+```
+# Trainings
+```{r trainings}
+cert <- tribble(
+  ~name, ~year, ~where,
+  "Red Hat Certified System Administrator (RHCSA)", "2020", "CSL Traning",
+  "Huawei Switch Technology", "2018", "Pan Pacific Sonargaon",
+  "Microsoft Excel", "2018", "Association of Information Systems, University of Dhaka",
+  "CCNA", "2015", "American International University Bangladesh"
+)
+
+cert %>%
+  detailed_entries(
+    with = name,
+    when = year,
+    where = where
+  )
+```
+
+# References
+```{r references}
+cert <- tribble(
+  ~name, ~jobTitle, ~where, ~details,
+  "Saniat Rahman Zishan ", "Associate Professor Department of EEE", "American International University", "Email: saniat@aiub.edu, Phone- +880 1720191713",
+  "Tanvir Ahmed", "Sub-Divisional Engineer", "Power Grid Company of Bangladesh Ltd.", "Email: Tanvir.mukul@gmail.com, Phone: +880 1717483230"
+  
+)
+
+cert %>%
+  detailed_entries(
+    with = name,
+    what = jobTitle,
+    where = where,
+    why = details
+  )
+```
