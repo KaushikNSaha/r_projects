@@ -138,7 +138,7 @@ cert %>%
 ```{r references}
 cert <- tribble(
   ~name, ~jobTitle, ~where, ~details,
-  "Saniat Rahman Zishan ", "Associate Professor Department of EEE", "American International University", "Email: saniat@aiub.edu, Phone- +880 1720191713",
+  "Saniat Rahman Zishan ", "Associate Professor, Department of EEE", "American International University Bangladesh", "Email: saniat@aiub.edu, Phone- +880 1720191713",
   "Tanvir Ahmed", "Sub-Divisional Engineer", "Power Grid Company of Bangladesh Ltd.", "Email: Tanvir.mukul@gmail.com, Phone: +880 1717483230"
   
 )
