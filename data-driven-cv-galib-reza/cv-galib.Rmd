@@ -110,7 +110,7 @@ cert %>%
 ```
 # Trainings
 ```{r trainings}
-cert <- tribble(
+training <- tribble(
   ~name, ~year, ~where,
   "Red Hat Certified System Administrator (RHCSA)", "2020", "CSL Traning",
   "Huawei Switch Technology", "2018", "Pan Pacific Sonargaon",
@@ -118,7 +118,7 @@ cert <- tribble(
   "CCNA", "2015", "American International University Bangladesh"
 )
 
-cert %>%
+training %>%
   detailed_entries(
     with = name,
     when = year,
@@ -128,14 +128,14 @@ cert %>%
 
 # References
 ```{r references}
-cert <- tribble(
+ref <- tribble(
   ~name, ~jobTitle, ~where, ~details,
   "Saniat Rahman Zishan ", "Associate Professor, Department of EEE", "American International University Bangladesh", "Email: saniat@aiub.edu, Phone- +880 1720191713",
   "Tanvir Ahmed", "Sub-Divisional Engineer", "Power Grid Company of Bangladesh Ltd.", "Email: Tanvir.mukul@gmail.com, Phone: +880 1717483230"
   
 )
 
-cert %>%
+ref %>%
   detailed_entries(
     with = name,
     what = jobTitle,
