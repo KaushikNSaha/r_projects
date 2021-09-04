@@ -34,15 +34,24 @@ xfun::pkg_attach2(packages, message = FALSE)
 ```{r employment}
 work <- tribble(
   ~title, ~startYear, ~endYear, ~where, ~detail,
-  "Senior System Engineer", "July, 2019", "Present", "Summit Communications Ltd.", "Implemented quality services of IT data base and network server for companies like Grameen Phone, Banglalink, HSBC, Access Telecom, Agni System Ltd, One Sky Communication, Amra Network Ltd etc. Successfully handle the server maintenance of Dhaka region",
+  "Senior System Engineer", "July, 2019", "Present", "Summit Communications Ltd.",
+  "Implemented quality services of IT data base and network server for companies like Grameen Phone, Banglalink, HSBC, Access Telecom, Agni System Ltd, One Sky Communication, Amra Network Ltd etc. Successfully handle the server maintenance of Dhaka region",
   "Senior System Engineer", "July, 2019", "Present", "Summit Communications Ltd.", "Handle various projects to implement new connectivity and server/network support to Telco companies, ISP, IIG, Government office, and TV satellite.",
-  "Senior System Engineer", "July, 2019", "Present", "Summit Communications Ltd.", "Monitor the maintenance work of Dhaka regional areas including Lalbagh, Kamrangirchar, Dhanmondi, Azimpur, Jigatoa, Hajaribagh, Mohammadpur, Adabor, Lalmatia, Keraniganj, Nawabganj and Dohar.",
-  "Senior System Engineer", "July, 2019", "Present", "Summit Communications Ltd.", "Collaborated closely with operations, business development and integrated service team within Summit group to provide logistical and technical support.",
-  "Senior System Engineer", "July, 2019", "Present", "Summit Communications Ltd.", "Conducted onsite inspections and assessed project conditions, provided technical supports to technicians and clients.",
-  "Senior System Engineer", "July, 2019", "Present", "Summit Communications Ltd.", "Maintain a database of employee’s attendance and overtime sheet.",
-  "System Engineer", "Feb, 2016", "June, 2019", "Summint Communications Ltd.", "Controlled software and equipment to perform quality task in data base and network serving",
-  "System Engineer", "Feb, 2016", "June, 2019", "Summint Communications Ltd.", "Examined installations and observe operations to ensure performance of the equipment, and provide technical assistance to field personnel.",
-  "System Engineer", "Feb, 2016", "June, 2019", "Summint Communications Ltd.", "Maintained & monitored the Telco, ISP, IIG Clients of Dhaka region"
+  "Senior System Engineer", "July, 2019", "Present", "Summit Communications Ltd.",
+  "Monitor the maintenance work of Dhaka regional areas including Lalbagh, Kamrangirchar, Dhanmondi, Azimpur, Jigatoa, Hajaribagh, Mohammadpur, Adabor, Lalmatia, Keraniganj, Nawabganj and Dohar.",
+  "Senior System Engineer", "July, 2019", "Present", "Summit Communications Ltd.",
+  "Collaborated closely with operations, business development and integrated service team within Summit group to provide logistical and technical support.",
+  "Senior System Engineer", "July, 2019", "Present", "Summit Communications Ltd.",
+  "Conducted onsite inspections and assessed project conditions, provided technical supports to technicians and clients.",
+  "Senior System Engineer", "July, 2019", "Present", "Summit Communications Ltd.",
+  "Maintain a database of employee’s attendance and overtime sheet.",
+  "System Engineer", "Feb, 2016", "June, 2019", "Summit Communications Ltd.",
+  "Controlled software and equipment to perform quality task in data base and network serving",
+  "System Engineer", "Feb, 2016", "June, 2019", "Summit Communications Ltd.",
+  "Examined installations and observe operations to ensure performance of the equipment, and provide technical assistance to field personnel.",
+  "System Engineer", "Feb, 2016", "June, 2019", "Summit Communications Ltd.",
+  "Maintained & monitored the Telco, ISP, IIG Clients of Dhaka region"
+  
 )
 
 work %>% 
