@@ -109,7 +109,7 @@ work %>%
 ```{r certifications}
 cert <- tribble(
   ~name, ~year, ~where, ~detail,
-  "Google Data Analytics Professional Certificate", "August, 2021", "Google - provided via Coursera", "Learned key Data Analytics skills like collection, transformation, and organization of data in order to draw conclusions, make predictions, and drive informed decision making.",
+  "Google Data Analytics Professional Certificate", "September, 2021", "Google - provided via Coursera", "Learned key Data Analytics skills like collection, transformation, and organization of data in order to draw conclusions, make predictions, and drive informed decision making.",
   "SQL for Data Science", "May, 2021", "UC Davis - provide via Coursera", "Learned basics of SQL, basics of database and Analysis with SQL Queries"
 
 )
