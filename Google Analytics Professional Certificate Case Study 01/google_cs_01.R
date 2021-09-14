@@ -457,3 +457,5 @@ trip_v2 %>%
              fill = ride_start_time_of_day)) +
   geom_col(position = "stack") +
   ggtitle("Regular Customer's Riding Habit by Season and Time of the Day")
+
+
