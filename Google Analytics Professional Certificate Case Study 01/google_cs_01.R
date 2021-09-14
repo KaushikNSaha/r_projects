@@ -10,29 +10,29 @@ library(lubridate)
 
 # load data --------------------------------------------------------------
 
-june20 <- read_csv("F:/Study/Google 08/Case_Study_01/tripdata/202006-divvy-tripdata.csv")
+june20 <- read_csv("../Case_Study_01/tripdata/202006-divvy-tripdata.csv")
 
-july20 <- read_csv("F:/Study/Google 08/Case_Study_01/tripdata/202007-divvy-tripdata.csv")
+july20 <- read_csv("../Case_Study_01/tripdata/202007-divvy-tripdata.csv")
 
-aug20 <- read_csv("F:/Study/Google 08/Case_Study_01/tripdata/202008-divvy-tripdata.csv")
+aug20 <- read_csv("../Case_Study_01/tripdata/202008-divvy-tripdata.csv")
 
-sep20 <- read_csv("F:/Study/Google 08/Case_Study_01/tripdata/202009-divvy-tripdata.csv")
+sep20 <- read_csv("../Case_Study_01/tripdata/202009-divvy-tripdata.csv")
 
-oct20 <- read_csv("F:/Study/Google 08/Case_Study_01/tripdata/202010-divvy-tripdata.csv")
+oct20 <- read_csv("../Case_Study_01/tripdata/202010-divvy-tripdata.csv")
 
-nov20 <- read_csv("F:/Study/Google 08/Case_Study_01/tripdata/202011-divvy-tripdata.csv")
+nov20 <- read_csv("../Case_Study_01/tripdata/202011-divvy-tripdata.csv")
 
-dec20 <- read_csv("F:/Study/Google 08/Case_Study_01/tripdata/202012-divvy-tripdata.csv")
+dec20 <- read_csv("../Case_Study_01/tripdata/202012-divvy-tripdata.csv")
 
-jan21 <- read_csv("F:/Study/Google 08/Case_Study_01/tripdata/202101-divvy-tripdata.csv")
+jan21 <- read_csv("../Case_Study_01/tripdata/202101-divvy-tripdata.csv")
 
-feb21 <- read_csv("F:/Study/Google 08/Case_Study_01/tripdata/202102-divvy-tripdata.csv")
+feb21 <- read_csv("../Case_Study_01/tripdata/202102-divvy-tripdata.csv")
 
-mar21 <- read_csv("F:/Study/Google 08/Case_Study_01/tripdata/202103-divvy-tripdata.csv")
+mar21 <- read_csv("../Case_Study_01/tripdata/202103-divvy-tripdata.csv")
 
-apr21 <- read_csv("F:/Study/Google 08/Case_Study_01/tripdata/202104-divvy-tripdata.csv")
+apr21 <- read_csv("../Case_Study_01/tripdata/202104-divvy-tripdata.csv")
 
-may21 <- read_csv("F:/Study/Google 08/Case_Study_01/tripdata/202105-divvy-tripdata.csv")
+may21 <- read_csv("../Case_Study_01/tripdata/202105-divvy-tripdata.csv")
 
 # wrangle and combine data in a single data set -------------------------------------
 
