@@ -4,8 +4,8 @@ surname: Saha
 address: "Shrish Das Lane, Banglabazar, Dhaka"
 phone: +880 1917658860
 email: "kaushiknandansaha@gmail.com"
-github: KaushikNSaha
 linkedin: knsaha
+www: kaushiknsaha.github.io/knsaha.github.io
 date: "`r format(Sys.time(), '%B %Y')`"
 headcolor: 990000
 aboutme: "I have been doing Data Analysis work on various dataset from early this year. I have a deep driven passion for Data Analysis, Visualization, and data science. I aspire to help the company I work for, make Data Driven Decision"
