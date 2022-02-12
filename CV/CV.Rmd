@@ -2,6 +2,7 @@
 name: Kaushik Nandan
 surname: Saha 
 address: "Shrish Das Lane, Banglabazar, Dhaka"
+# profilepic: "photo for Applications.jpg"
 phone: +880 1917658860
 email: "kaushiknandansaha@gmail.com"
 linkedin: knsaha
@@ -142,4 +143,21 @@ honors %>%
   )
 ```
 
+# References
+```{r references}
+ref <- tribble(
+  ~name, ~jobTitle, ~where, ~details,
+  "Dr. S. M. Nasif Shams", "Assistant Professor, Institute of Energy", "University of Dhaka, Bangladesh, Bangladesh", "Email: nasifshams@gmail.com, Phone- +880 1983 444555",
+  "Dr. Saiful Huque", "Professor & Director, Institute of Energy", "University of Dhaka, Bangladesh, Bangladesh", "Email: saifulhq@yahoo.com, Phone: +880 1911 340058"
+
+)
+
+ref %>%
+  detailed_entries(
+    with = name,
+    what = jobTitle,
+    where = where,
+    why = details
+  )
+```
 
