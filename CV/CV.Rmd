@@ -1,7 +1,7 @@
 ---
 name: Kaushik Nandan
 surname: Saha 
-address: "Shrish Das Lane, Banglabazar, Dhaka"
+address: "FA Tower, Alamganj Road, Ganderia, Dhaka - 1204"
 # profilepic: "photo for Applications.jpg"
 phone: +880 1917658860
 email: "kaushiknandansaha@gmail.com"
