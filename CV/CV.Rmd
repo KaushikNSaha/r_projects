@@ -92,7 +92,7 @@ projects %>%
 ```{r employment}
 work <- tribble(
   ~title, ~startYear, ~endYear, ~where, ~detail,
-  "Freelance Virtual Assisant", "Feb, 2021", "Present", "Outsourced work from Upwork", "Performing various Administrative work via online using Google Spreadsheet and Project Management Platform- Jira"
+  "Freelance Virtual Assisant", "Feb, 2021", "Present", "Freelance Work", "Performing various Administrative work via online using Google Spreadsheet and Project Management Software"
 )
 
 work %>% 
