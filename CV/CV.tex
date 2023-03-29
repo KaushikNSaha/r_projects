@@ -1,0 +1,226 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+%
+% Adapted to be an Rmarkdown template by Mitchell O'Hara-Wild
+% 23 November 2018
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt,a4paper,]{awesome-cv}
+
+% Configure page margins with geometry
+\usepackage{geometry}
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+
+\definecolor{awesome}{HTML}{990000}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\def\endfirstpage{\newpage}
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+
+\name{Kaushik Nandan}{Saha}
+
+\address{FA Tower, Alamganj Road, Ganderia, Dhaka - 1204}
+
+\mobile{+880 1917658860}
+\email{\href{mailto:kaushiknandansaha@gmail.com}{\nolinkurl{kaushiknandansaha@gmail.com}}}
+\homepage{kaushiknsaha.github.io/knsaha.github.io}
+\linkedin{knsaha}
+
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \skype{skype-id}
+% \reddit{reddit-id}
+
+\quote{I have been doing Data Analysis work on various dataset from
+early 2021. I have a deep driven passion for Data Analysis,
+Visualization, and data science. I aspire to help the company I work
+for, make Data Driven Decision}
+
+\usepackage{booktabs}
+
+\providecommand{\tightlist}{%
+	\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+%------------------------------------------------------------------------------
+
+
+
+% Pandoc CSL macros
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{2em}
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1 \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces\fi
+  % set entry spacing
+  \ifnum #2 > 0
+  \setlength{\parskip}{#2\baselineskip}
+  \fi
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\honortitlestyle{#1}}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\honordatestyle{#1}}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+% 2019-02-14 Chris Umphlett - add flexibility to the document name in footer, rather than have it be static Curriculum Vitae
+\makecvfooter
+  {March 2023}
+    {Kaushik Nandan Saha~~~·~~~Résumé}
+  {\thepage}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%------------------------------------------------------------------------------
+
+
+
+\hypertarget{education}{%
+\section{Education}\label{education}}
+
+\begin{cventries}
+    \cventry{Institute of Energy, University of Dhaka}{Master of Science, Renewable Energy Technology}{}{Oct, 2015 --> Mar, 2018}{\begin{cvitems}
+\item CGPA: 3.55 out of 4.00
+\end{cvitems}}
+    \cventry{American International University Bangladesh}{Bachelor of Science, Electrical \& Electronic Engineering}{}{2011 --> 2015}{\begin{cvitems}
+\item CGPA: 2.78 out of 4.00
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{skills}{%
+\section{Skills}\label{skills}}
+
+\begin{cventries}
+    \cventry{Excel, PowerBI, PowerPoint, Word}{Microsoft Office}{}{}{\begin{cvitems}
+\item Data Cleaning, Analysis, Pivot Table, Dashboard
+\end{cvitems}}
+    \cventry{R}{Programming Language}{}{}{\begin{cvitems}
+\item Data Exploration, Analysis, Visualization using Packages: Tidyverse, DataExplorer, Plotly, Lubridate
+\end{cvitems}}
+    \cventry{SQL}{}{}{}{\begin{cvitems}
+\item Database Query, Exploration, Cleaning using- Joins, CTE, TempTable, Stored Procedures, Window Functions, Views
+\end{cvitems}}
+    \cventry{Python}{}{}{}{\begin{cvitems}
+\item Data Analysis and Machine learning tasks using Packages: Pandas, NumPy, Matplotlib, scikit learn
+\end{cvitems}}
+    \cventry{Tableau}{Data Visualization}{}{}{\begin{cvitems}
+\item Creating Dashboard and Data Story with Key Insights
+\end{cvitems}}
+    \cventry{RMarkdown, Juypter Notebook}{Markup Language}{}{}{\begin{cvitems}
+\item Documentation and Create Detailed Reports
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{projects}{%
+\section{Projects}\label{projects}}
+
+\begin{cventries}
+    \cventry{Fictional Bike Share Company Data, Health and wellness Company Dataset - Ongoing}{Business Case Study}{}{}{\begin{cvitems}
+\item Performed Data preparation, processing, visualization and found out real business solution
+\end{cvitems}}
+    \cventry{Renewable energy Dataset - Ongoing, Forest Area Dataset}{Environmental Data Case Study}{}{}{\begin{cvitems}
+\item Performed Exploratory data analysis and found out various relation and future prospect of Renewable Energy
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{employment}{%
+\section{Employment}\label{employment}}
+
+\begin{cventries}
+    \cventry{}{Administrative Assistant (Remote)}{Baeldung}{Oct, 2022 --> Present}{\begin{cvitems}
+\item Performing various Administrative work via online using Google Suites, Project Management Software - Jira, Marketing Automation Platform - DRIP, Online Course Platform - Teachable, Google Analytics
+\end{cvitems}}
+\end{cventries}
+
+\pagebreak
+
+\hypertarget{certifications}{%
+\section{Certifications}\label{certifications}}
+
+\begin{cventries}
+    \cventry{}{Google Data Analytics Professional Certificate}{Google - provided via Coursera}{September, 2021}{\begin{cvitems}
+\item Learned key Data Analytics skills like collection, transformation, and organization of data in order to draw conclusions, make predictions, and drive informed decision making.
+\end{cvitems}}
+    \cventry{}{SQL for Data Science}{UC Davis - provide via Coursera}{May, 2021}{\begin{cvitems}
+\item Learned basics of SQL, basics of database and Analysis with SQL Queries
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{honors}{%
+\section{Honors}\label{honors}}
+
+\begin{cventries}
+    \cventry{}{The GOLD STANDARD of The DUKE of EDINBURG’S INTERNATIONAL AWARD}{The Duke of EDINBURG Foundation}{2015}{\begin{cvitems}
+\item Awarded due to voluntary work performed on several sectors
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{references}{%
+\section{References}\label{references}}
+
+\begin{cventries}
+    \cventry{Assistant Professor, Institute of Energy}{Dr. S. M. Nasif Shams}{University of Dhaka, Bangladesh, Bangladesh}{}{\begin{cvitems}
+\item Email: nasifshams@gmail.com, Phone- +880 1983 444555
+\end{cvitems}}
+    \cventry{Professor \& Director, Institute of Energy}{Dr. Saiful Huque}{University of Dhaka, Bangladesh, Bangladesh}{}{\begin{cvitems}
+\item Email: saifulhq@yahoo.com, Phone: +880 1911 340058
+\end{cvitems}}
+\end{cventries}
+
+
+
+\end{document}
