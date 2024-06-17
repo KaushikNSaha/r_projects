@@ -92,7 +92,7 @@ projects %>%
 ```{r employment}
 work <- tribble(
   ~title, ~startYear, ~endYear, ~where, ~detail,
-  "Administrative Assistant (Remote)", "Oct, 2022", "Present", "Baeldung - EdTech Company", "Performing various Administrative work via online using Google Suites, Project Management Software - Jira, Marketing Automation Platform - DRIP, Online Course Platform - Teachable, Google Analytics"
+  "Senior Administrative Assistant (Remote)", "Oct, 2022", "Present", "Baeldung - EdTech Company", "In my role, I handle the front-end aspects of our website and Teachable course platform, ensuring they are user-friendly and visually appealing. I utilize Jira for task distribution and project management to keep workflows organized and efficient. Additionally, I maintain course pages on WordPress, manage website widgets for optimal functionality, and write standard operating procedures (SOPs) while tracking report updates. I also oversee social media announcements to maintain engagement and brand visibility. Effective communication with team members and the CEO is paramount to ensure alignment and successful execution of my objectives."
 )
 
 work %>% 
@@ -147,8 +147,8 @@ honors %>%
 ```{r references}
 ref <- tribble(
   ~name, ~jobTitle, ~where, ~details,
-  "Dr. S. M. Nasif Shams", "Assistant Professor, Institute of Energy", "University of Dhaka, Bangladesh, Bangladesh", "Email: nasifshams@gmail.com, Phone- +880 1983 444555",
-  "Dr. Saiful Huque", "Professor & Director, Institute of Energy", "University of Dhaka, Bangladesh, Bangladesh", "Email: saifulhq@yahoo.com, Phone: +880 1911 340058"
+  "Dr. S. M. Nasif Shams", "Associate Professor & DIRECTOR, Institute of Energy", "University of Dhaka, Bangladesh, Bangladesh", "Email: nasifshams@gmail.com, Phone- +880 1983 444555",
+  "Dr. Saiful Huque", "Professor (LPR), Institute of Energy", "University of Dhaka, Bangladesh, Bangladesh", "Email: saifulhq@yahoo.com, Phone: +880 1911 340058"
 
 )
 
